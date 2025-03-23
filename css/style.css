@@ -1,0 +1,616 @@
+:root {
+    --bg1: url('../img/bg1-h.webp');
+    --bg1uzun: url('../img/bg1.webp');
+    --bg2: url('../img/bg2h.jpg');
+    --bg2uzun: url('../img/bg2.webp');
+    --bg3: url('../img/bgh3.jpg');
+    --bg3uzun: url('../img/bg3.jpg');
+    --img1: url('../img/acc1.jpg');
+    --img2: url('../img/acc2.jpg');
+    --img3: url('../img/acc3.jpg');
+    --img4: url('../img/acc4.jpg');
+    --img5: url('../img/acc5.jpg');
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'SamsungOne';
+}
+ul {
+    list-style: none;
+}
+ul li {
+    padding: 10px 0;
+}
+ul li a {
+    text-decoration: none;
+    color: #000;
+}
+.input-search {
+    background-color: #F7F7F7;
+    height: 2em;
+    width: 90%;
+    position: relative;
+}
+.pad {
+    left: 7%;
+}
+
+.pad-2 {
+    top: 80%;
+    left: 10%;
+}
+.height-input {
+    width: 100%;
+    height: 45px;
+}  
+/* SLIDER 1! */
+.slider1 {
+    width: 100%;
+    height: 75%;
+}
+.slide-text-position {
+    text-align: center;
+    top: 10%;
+    transform-origin: 50%, 50%;
+}
+.font-bold {
+    font-family: 'SamsungOne 700';
+}
+.font-size-slider-p {
+    font-size: .8em !important;
+}
+.bottom-pos {
+    bottom: 25%;
+}
+
+.bord::after {
+    content: " ";
+    display: flex;
+    border: 1px solid #000 !important;
+}
+.my-card-2 {
+    position: relative;
+    padding: 20px 20px 50px 20px;
+    width: 45%;
+    background-color: #F4F4F4;
+    border-radius: 1em;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.my-card-3 {
+    position: relative;
+    padding: 10px;
+    width: 45%;
+    background-color: #F4F4F4;
+    border-radius: 1em;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.cont {
+    height: 100%;
+}
+.img-card {
+    width: 100%;
+    transform: 0.5s;
+}
+.font-card-size {
+    font-size: 1rem;
+}
+.aftr-tab {
+    position: relative;
+    display: inline-block;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    overflow: hidden;
+}
+.aftr-tab:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #333;
+    transition: all 0.4s ease;
+    transform: translateX(-50%);
+}
+.aftr-tab:hover:after, .hover-effect.active::after {
+    width: 100%;
+}
+.content {
+    bottom: 20px;
+    position: absolute;
+    transition: all 0.3s ease;
+}
+.text-hv {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.3s ease;
+}
+.button-hv {
+    top: 75%;
+    position: absolute;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #000;
+    border: 1px solid #000;
+    border-radius: 1em;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+}
+.button-hv-2 {
+    top: 100%;
+    left: 25%;
+    position: absolute;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #000;
+    border: 1px solid #000;
+    border-radius: 1em;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+}
+.button-hv-3 {
+    top: 82%;
+    position: absolute;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #000;
+    border: 1px solid #000;
+    border-radius: 1em;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+}
+.button-hv:hover, .button-hv-2:hover, .button-hv-3:hover {
+    background: #fff;
+    color: #000 !important;
+}
+.card-text-pos {
+    top: 35%;
+    left: 30%;
+    transform: translate(50%);
+}
+.card-text-size {
+    font-size: 4vw;
+}
+.font-size-slider-p-2 {
+    font-size: .7em;
+}
+.bg-1 {
+    min-height: 280px;
+    background: var(--bg1) center/cover;
+    border-radius: 5rem 0 5rem 0;
+}
+.bg-2 {
+    min-height: 444px;
+    background: var(--bg2) center/cover;
+}
+.width-btn-light {
+    width: 150px !important;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+.bg-fa {
+    background: #fafafa !important;
+}
+.mySwiper2 .swiper-slide {
+    background: #fafafa
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-scrollbar {
+    position: static !important;
+    margin: 20px 0 0 0;
+    width: 25% !important;
+}
+.swiper-slide img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.head-pos {
+    z-index: 22;
+    transform: translate(0%, -40%);
+}
+.bottom-position {
+    top: 55%;
+    left: 5%;
+}
+.minheight {
+    min-height: 480px;
+}
+.bg-3 {
+    background: var(--bg3) center/cover;
+}
+.bg-3-pos {
+    top: 5px;
+}
+.op {
+    display: none;
+}
+.font-foot { 
+    font-size: .7rem;
+}
+.search-btn {
+    padding: 5px;
+    background: #fff;
+    text-align: center;
+    border: 1px solid #CCCCCC;
+    border-radius: 2rem;
+}
+@media only screen and (min-width: 321px) {
+    .head-pos {
+        transform: translate(5%, -50%);
+    }
+}
+@media only screen and (min-width: 375px) {
+    .head-pos {
+        transform: translate(15%, -50%);
+    }
+}
+@media only screen and (min-width: 576px) {
+    .head-pos {
+        transform: translate(35%, -50%);
+    }
+    /* slider 1!*/
+    .slide-text-position {
+        text-align: left;
+        top: 10%;
+        left: 10%;
+        transform-origin: 50%, 50%;
+    }
+    .font-size-slider-p-2 {
+        font-size: 1em;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .img-ac-hv {
+        transition: 0.3s;
+    }
+    .img-ac-hv:hover {
+        transform: scale(1.03);
+    }
+    .pad-2 {
+        top: 77%;
+        left: 5%;
+    }
+    .search-btn:hover {
+        background: #F4F4F4;
+    }
+    .underline-hv:hover {
+        text-decoration: underline !important;
+    }
+    .font-foot { 
+        font-size: .8em;
+    }
+    .usa::after {
+        content: " ";
+        border: 1px solid #CCCCCC;
+        margin: 0 10px 0 25px;
+    }
+    .hover-item {
+        padding: 10px 0;
+    }
+    .hover-item > *:hover {
+        border-top: 3px #000 solid;
+        border-bottom: 2px #CCCCCC solid;
+    }
+    .hover-item:nth-child(5):hover {
+        border-top: 3px #000 solid;
+    }
+    .hover-item:hover::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #000;
+        transition: width 0.3s ease;
+      }
+    .bg-3 {
+        background: var(--bg3uzun) center no-repeat;
+    }
+    .bg-3-pos {
+        top: 120px;
+        left: 2%;
+    }
+    .bottom-position {
+        top: 65%;
+        left: 10%;
+    }
+    .head-pos {
+        left: 15%;
+        transform: translate(initial, initial);
+    }
+    .p-hv:hover::after {
+        content: "";
+        border: 1px solid #000;
+        display: flex;
+
+    }
+    .bg-1 {
+        background: var(--bg1uzun) center/cover;
+    }
+    .bg-2 {
+        width: 100%;
+        min-height: initial;
+        height: 200px !important;
+        background: var(--bg2uzun) 50% 90%/cover;
+    }
+    .my-card-3 {
+        padding: 20px;
+    }
+    .slide-text-position {
+        top: 25%;
+    }
+    .btn-hv:hover {
+        background: none !important;
+        color: #000 !important;
+        border: 1px #000 solid !important;
+    }
+    .btn-light:hover {
+        background: #000 !important;
+        color: #fff !important;
+        border: 1px #fff solid !important;
+    }
+    .my-card-2 {
+        width: 30%;
+    }
+    .my-card-3 img {
+        transition: 0.5s;
+    }
+    .my-card-2:hover .img-card, .my-card-3:hover img {
+        transform: scale(1.05);
+    }
+    .my-card-2:hover .text-hv {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    .my-card-2:hover .button-hv {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .img-card {
+        width: 50%;
+        transition: 0.5s;
+    }
+    .card-text-pos {
+        top: 76%;
+        left: 4%;
+        padding-left: 30px;
+    }
+    .card-text-size {
+        text-align: center;
+        font-size: 2vw;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .pad-2 {
+        top: 70%;
+        left: 2%;
+    }
+    .bottom-position {
+        top: 70%;
+        left: 20%;
+    }
+    .head-pos {
+        top: 5%;
+        left: 25%;
+        transform: translate(initial, initial);
+    }
+    .my-card-3:hover .button-hv-2, .my-card-3:hover .button-hv-3  {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .button-hv-2 {
+        top: 120%;
+        left: 35%;
+    }
+    .card-text-pos {
+        left: 28%;
+        transform: translate(0);
+    }
+    .card-text-size {
+        text-align: center;
+        font-size: 1.5em;
+    }
+    .slide-text-position {
+        top: 35%;
+    }
+    .shop {
+        left: 450%;
+    }
+    .ai {
+        left: 180%;
+    }
+    .mobile {
+        left: 500%;
+    }
+    .tv-audio {
+        left: 300%;
+    }
+    .appliances {
+        left: 158%;
+    }
+    .computing {
+        left: 80%;
+    }
+    .displays{
+        left: -40%;
+    }
+    .accessories {
+        left: -40%;
+    }
+    .explore {
+        left: -300%;
+    }
+    .support {
+        left: -300%;
+    }
+    .for-business {
+        left: -345%;
+    }
+    .my-menu {
+        transition: 0.3s ;
+        padding: 3px 0;
+        border-radius: 1em;
+        position: relative;
+    }
+    .my-menu:hover .my-menu-item{
+        width: max-content;
+    }
+    .my-menu:hover .shop {
+        height: 400px;
+    }
+    .my-menu:hover .ai {
+        height: 150px;
+    }
+    .my-menu:hover .mobile {
+        height: 540px;
+    }
+    .my-menu:hover .tv-audio {
+        height: 430px;
+    }
+    .my-menu:hover .appliances {
+        height: 350px;
+    }
+    .my-menu:hover .computing {
+        height: 500px;
+    }
+    .my-menu:hover .displays {
+        height: 500px;
+    }
+    .my-menu:hover .accessories {
+        height: 250px;
+    }
+    .my-menu:hover .explore {
+        height: 350px;
+    }
+    .my-menu:hover .support {
+        height: 350px;
+    }
+    .my-menu:hover .for-business {
+        height: 350px;
+    }
+    .mobile-border {
+        border-right: 1px solid #CCCCCC;
+    }
+    .my-menu:hover{
+        background-color: #000;
+    }
+    .my-menu:hover .my-menu-head {
+        color: #fff;
+    }
+    .my-list-item:hover {
+        font-weight: 700;
+    }
+    body:has(.my-menu:hover){background-color: rgb(0, 0, 0, 0.5);}
+    header:has(.my-menu:hover){background-color: #fff;}
+    header:has(.my-menu:hover) .my-menu-item{background-color: white;}
+    header:has(.my-menu:hover) .grayui{
+        position: absolute;
+        width: max-content;
+        height: 100vh;
+        z-index: 555;
+        background-color: rgb(0, 0, 0,0.5);
+    }
+    .my-menu-head {
+        text-align: center;
+        transition: 0.3s;
+        font-size: .9em;
+        padding: 0 10px 35px 10px;
+        font-family: 'SamsungOne 700';
+        color: #000;
+        text-decoration: none;
+    }
+    .my-menu-item {
+        top: 24px;
+        border-top: 1px #CCCCCC solid;
+        border-radius: 0 0 2rem 2rem;
+        background: #fff;
+        transition: all 1s ease;
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        position: absolute;
+        margin: 32px 0 0 0;
+        z-index: 555;
+        transform: translate(-50%, 0%);
+    }
+    .my-list {
+        padding: 10px;
+    }
+    .my-list-item {
+        transition: 0.2s;
+        padding: 4px 0;
+        font-size: 0.8rem;
+        color: #000;
+        text-decoration: none;
+    }
+    .my-heading {
+        font-size: .9rem;
+        font-weight: 700;
+    }
+    .my-grid {
+        width: 425px;
+        height: 444px;
+        gap: 20px;
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: 30% 30% 30%;
+    }
+    .my-card img{
+        width: 50px;
+        height: 60px;
+        transition: 0.3s ease;
+    }
+    .my-card:hover img {
+        transform: scale(1.05);
+    }
+    .bg-card {
+        background: #F8F8F8;
+        border-radius: 1em;
+    }
+    .icon-padding {
+        padding: 3px 0;
+    }
+    .pro:hover {
+        background: initial;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .bottom-position {
+        top: 70%;
+        left: 27%;
+    }
+    .head-pos {
+        left: 30%;
+        transform: translate(initial, initial);
+    }
+}
